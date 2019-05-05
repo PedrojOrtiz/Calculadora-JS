@@ -1,0 +1,27 @@
+#resultado {
+    width: 89%;
+}
+
+.boton {
+    width: 100% !important;
+    padding: 15px 32px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.center, .boton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#igual {
+    padding: 39%;
+}
+
+#resultado {
+    padding: 5%;
+}

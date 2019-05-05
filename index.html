@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplos sobre CSS</title>    
+    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+ <body>
+    
+    <script type="text/javascript">
+        document.write("<h5>JavaScript</h5>")
+        //console.log()
+    </script>
+    <noscript>
+        your browser does not support or 
+        has disabled JavaScript
+    </noscript>
+    
+    <br>
+
+    <table class="center" id="calculadora" style="width: 80%">
+
+        <colgroup>
+            <col style="width: 1%"/>
+            <col style="width: 1%"/>
+            <col style="width: 1%"/>
+            <col style="width: 1%"/>
+            <col style="width: 1%"/>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th colspan="5">Calculadora</th>
+            </tr>
+            <tr>
+                <th colspan="5"> <input type="number" id="resultado" value="0.00" readonly> </th>
+            </tr>
+        </thead>  
+        <tr>
+            <td><input type="button" class="boton" id="del" value="DEL"></td>
+            <td><input type="button" class="boton" id="ce" value="CE"></td>
+            <td><input type="button" class="boton" id="c" value="C"></td>
+            <td><input type="button" class="boton" id="mm" value="±"></td>
+            <td><input type="button" class="boton" id="raiz" value="√"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="boton" id="7" value="7"></td>
+            <td><input type="button" class="boton" id="8" value="8"></td>
+            <td><input type="button" class="boton" id="9" value="9"></td>
+            <td><input type="button" class="boton" id="division" value="/" onclick="division()"></td>
+            <td><input type="button" class="boton" id="porcentaje" value="%"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="boton" id="4" value="4"></td>
+            <td><input type="button" class="boton" id="5" value="5"></td>
+            <td><input type="button" class="boton" id="6" value="6"></td>
+            <td><input type="button" class="boton" id="multiplicacion" value="*" onclick="multiplicacion()"></td>
+            <td><input type="button" class="boton" id="1/x" value="1/x"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="boton" id="1" value="1"></td>
+            <td><input type="button" class="boton" id="2" value="2"></td>
+            <td><input type="button" class="boton" id="3" value="3"></td>
+            <td><input type="button" class="boton" id="resta" value="-" onclick="resta()"></td>
+            <td rowspan="2"><input type="button" class="boton" id="igual" value="="></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" class="boton" id="0" value="0"></td>
+            <td><input type="button" class="boton" id="coma" value=","></td>
+            <td><input type="button" class="boton" id="suma" value="+" onclick="suma()"></td>   
+        </tr>
+    </table>
+
+ </body>
+</html>
