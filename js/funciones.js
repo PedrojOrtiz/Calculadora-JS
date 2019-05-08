@@ -1,5 +1,10 @@
-function saludar(saludo) {
-    alert(saludo)
+//aux determinara la cantidad de operandos
+
+function setNum() {
+    var aux = 0
+    var n1 = 0
+    var n2 = 0
+    
 }
 
 function suma() {
@@ -30,4 +35,8 @@ function division() {
     //alert(res)
     document.getElementById("resultado").value = res
 }
-//funcion eval()
+
+
+function getNum(num) {
+    
+}

@@ -18,14 +18,14 @@
     
     <br>
 
-    <table class="center" id="calculadora" style="width: 80%">
+    <table class="center" id="calculadora" >
 
         <colgroup>
-            <col style="width: 1%"/>
-            <col style="width: 1%"/>
-            <col style="width: 1%"/>
-            <col style="width: 1%"/>
-            <col style="width: 1%"/>
+            <col style="width: 5%"/>
+            <col style="width: 5%"/>
+            <col style="width: 5%"/>
+            <col style="width: 5%"/>
+            <col style="width: 5%"/>
         </colgroup>
 
         <thead>
@@ -37,16 +37,16 @@
             </tr>
         </thead>  
         <tr>
-            <td><input type="button" class="boton" id="del" value="DEL"></td>
+            <td><input type="button" class="boton" id="del" value="DEL" ></td>
             <td><input type="button" class="boton" id="ce" value="CE"></td>
             <td><input type="button" class="boton" id="c" value="C"></td>
             <td><input type="button" class="boton" id="mm" value="±"></td>
             <td><input type="button" class="boton" id="raiz" value="√"></td>
         </tr>
         <tr>
-            <td><input type="button" class="boton" id="7" value="7"></td>
-            <td><input type="button" class="boton" id="8" value="8"></td>
-            <td><input type="button" class="boton" id="9" value="9"></td>
+            <td><input type="button" class="boton" id="7" value="7" onclick="getNum(7)" ></td>
+            <td><input type="button" class="boton" id="8" value="8" onclick="getNum(8)" ></td>
+            <td><input type="button" class="boton" id="9" value="9" onclick="getNum(9)"></td>
             <td><input type="button" class="boton" id="division" value="/" onclick="division()"></td>
             <td><input type="button" class="boton" id="porcentaje" value="%"></td>
         </tr>
@@ -62,10 +62,10 @@
             <td><input type="button" class="boton" id="2" value="2"></td>
             <td><input type="button" class="boton" id="3" value="3"></td>
             <td><input type="button" class="boton" id="resta" value="-" onclick="resta()"></td>
-            <td rowspan="2"><input type="button" class="boton" id="igual" value="="></td>
+            <td rowspan="2"><input type="button" class="center" id="igual" value="="></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="button" class="boton" id="0" value="0"></td>
+            <td colspan="2"><input type="button" class="center" id="cero" value="0"></td>
             <td><input type="button" class="boton" id="coma" value=","></td>
             <td><input type="button" class="boton" id="suma" value="+" onclick="suma()"></td>   
         </tr>

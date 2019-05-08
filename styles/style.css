@@ -1,17 +1,28 @@
+body {
+    background-color: rgb(41, 64, 85);
+}
+
 #resultado {
     width: 89%;
+    background-color: gray;
 }
 
 .boton {
-    width: 100% !important;
+    width: 100%;
     padding: 15px 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table, th, td {
-    border: 1px solid black;
+    width: 530px !important;
+    padding: 2px !important;
+    border: 1px solid rgb(216, 26, 26);
+    background-color: darkcyan;
 }
 
-.center, .boton{
+.center{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,9 +30,20 @@ table, th, td {
 }
 
 #igual {
-    padding: 39%;
+    padding: 48%;
 }
 
 #resultado {
     padding: 5%;
+}
+
+#cero, #coma, #suma {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+#igual {
+    width: 10px;
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
