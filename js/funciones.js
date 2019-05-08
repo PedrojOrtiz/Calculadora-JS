@@ -1,42 +1,22 @@
-//aux determinara la cantidad de operandos
-
-function setNum() {
-    var aux = 0
-    var n1 = 0
-    var n2 = 0
-    
+function setNum(num) {
+    document.getElementById("resultado").value = document.getElementById("resultado").value + num
 }
 
-function suma() {
-    var n1 = Number(document.getElementById("numero1").value)
-    var n2 = Number(document.getElementById("numero2").value)
-    var res = n1 + n2
-    //alert(res)
-    document.getElementById("resultado").value = res
-}
-function resta() {
-    var n1 = Number(document.getElementById("numero1").value)
-    var n2 = Number(document.getElementById("numero2").value )
-    var res = n1 - n2
-    //alert(res)
-    document.getElementById("resultado").value = res
-}
-function multiplicacion() {
-    var n1 = Number(document.getElementById("numero1").value)
-    var n2 = Number(document.getElementById("numero2").value )
-    var res = n1 * n2
-    //alert(res)
-    document.getElementById("resultado").value = res
-}
-function division() {
-    var n1 = Number(document.getElementById("numero1").value)
-    var n2 = Number(document.getElementById("numero2").value )
-    var res = n1 / n2
-    //alert(res)
-    document.getElementById("resultado").value = res
+function igual() {
+    var exp = document.getElementById("resultado").value
+    if (exp) {
+        document.getElementById("resultado").value = eval(exp)    
+    }
 }
 
+function limpiar() {
+    document.getElementById("resultado").value = "" 
+}
 
-function getNum(num) {
-    
+function borrar() {
+    document.getElementById("resultado").value = document.getElementById("resultado").value.substring(0, document.getElementById("resultado").value.length -1)  
+}
+
+function raiz() {
+    document.getElementById("resultado").value = Math.sqrt(document.getElementById("resultado").value)
 }
